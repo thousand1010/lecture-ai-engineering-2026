@@ -1,0 +1,287 @@
+{
+  "用語集にある「ハルシネーション」の定義を教えてください。": {
+    "needs_review": false,
+    "must_include": [
+      "事実",
+      "生成"
+    ]
+  },
+  "初めて学ぶ人に「ハルシネーション」の意味と特徴を説明してください。": {
+    "needs_review": false,
+    "must_include": [
+      "事実",
+      "生成"
+    ]
+  },
+  "「幻覚」という呼び方の用語を説明してください。": {
+    "needs_review": false,
+    "must_include": [
+      "事実",
+      "生成"
+    ]
+  },
+  "用語集にある「事前学習」の定義を教えてください。": {
+    "needs_review": false,
+    "must_include": [
+      "汎用",
+      "トークン"
+    ]
+  },
+  "初めて学ぶ人に「事前学習」の意味と特徴を説明してください。": {
+    "needs_review": false,
+    "must_include": [
+      "汎用",
+      "トークン"
+    ]
+  },
+  "「pre-training」という呼び方の用語を説明してください。": {
+    "needs_review": false,
+    "must_include": [
+      "汎用",
+      "トークン"
+    ]
+  },
+  "用語集にある「ファインチューニング」の定義を教えてください。": {
+    "needs_review": false,
+    "must_include": [
+      "追加学習",
+      "形式"
+    ]
+  },
+  "初めて学ぶ人に「ファインチューニング」の意味と特徴を説明してください。": {
+    "needs_review": false,
+    "must_include": [
+      "追加学習",
+      "形式"
+    ]
+  },
+  "「fine-tuning」という呼び方の用語を説明してください。": {
+    "needs_review": false,
+    "must_include": [
+      "追加学習",
+      "形式"
+    ]
+  },
+  "用語集にある「教師ありファインチューニング（SFT）」の定義を教えてください。": {
+    "needs_review": false,
+    "must_include": [
+      "入力",
+      "望ましい出力"
+    ]
+  },
+  "初めて学ぶ人に「教師ありファインチューニング（SFT）」の意味と特徴を説明してください。": {
+    "needs_review": false,
+    "must_include": [
+      "入力",
+      "望ましい出力"
+    ]
+  },
+  "「SFT」という呼び方の用語を説明してください。": {
+    "needs_review": false,
+    "must_include": [
+      "入力",
+      "望ましい出力"
+    ]
+  },
+  "用語集にある「PEFT」の定義を教えてください。": {
+    "needs_review": false,
+    "must_include": [
+      "一部",
+      "パラメータ"
+    ]
+  },
+  "初めて学ぶ人に「PEFT」の意味と特徴を説明してください。": {
+    "needs_review": false,
+    "must_include": [
+      "一部",
+      "パラメータ"
+    ]
+  },
+  "「Parameter-Efficient Fine-Tuning」という呼び方の用語を説明してください。": {
+    "needs_review": false,
+    "must_include": [
+      "一部",
+      "パラメータ"
+    ]
+  },
+  "用語集にある「LoRA」の定義を教えてください。": {
+    "needs_review": false,
+    "must_include": [
+      "固定",
+      "行列"
+    ]
+  },
+  "初めて学ぶ人に「LoRA」の意味と特徴を説明してください。": {
+    "needs_review": false,
+    "must_include": [
+      "固定",
+      "行列"
+    ]
+  },
+  "「Low-Rank Adaptation」という呼び方の用語を説明してください。": {
+    "needs_review": false,
+    "must_include": [
+      "固定",
+      "行列"
+    ]
+  },
+  "用語集にある「ランク（LoRAのr）」の定義を教えてください。": {
+    "needs_review": false,
+    "must_include": [
+      "大きさ",
+      "パラメータ"
+    ]
+  },
+  "初めて学ぶ人に「ランク（LoRAのr）」の意味と特徴を説明してください。": {
+    "needs_review": false,
+    "must_include": [
+      "大きさ",
+      "パラメータ"
+    ]
+  },
+  "「rank」という呼び方の用語を説明してください。": {
+    "needs_review": false,
+    "must_include": [
+      "大きさ",
+      "パラメータ"
+    ]
+  },
+  "用語集にある「QLoRA」の定義を教えてください。": {
+    "needs_review": false,
+    "must_include": [
+      "量子化",
+      "LoRA"
+    ]
+  },
+  "初めて学ぶ人に「QLoRA」の意味と特徴を説明してください。": {
+    "needs_review": false,
+    "must_include": [
+      "量子化",
+      "LoRA"
+    ]
+  },
+  "「Quantized LoRA」という呼び方の用語を説明してください。": {
+    "needs_review": false,
+    "must_include": [
+      "量子化",
+      "LoRA"
+    ]
+  },
+  "用語集にある「量子化」の定義を教えてください。": {
+    "needs_review": false,
+    "must_include": [
+      "ビット",
+      "メモリ"
+    ]
+  },
+  "初めて学ぶ人に「量子化」の意味と特徴を説明してください。": {
+    "needs_review": false,
+    "must_include": [
+      "ビット",
+      "メモリ"
+    ]
+  },
+  "「quantization」という呼び方の用語を説明してください。": {
+    "needs_review": false,
+    "must_include": [
+      "ビット",
+      "メモリ"
+    ]
+  },
+  "用語集にある「学習率」の定義を教えてください。": {
+    "needs_review": false,
+    "must_include": [
+      "更新",
+      "パラメータ"
+    ]
+  },
+  "初めて学ぶ人に「学習率」の意味と特徴を説明してください。": {
+    "needs_review": false,
+    "must_include": [
+      "更新",
+      "パラメータ"
+    ]
+  },
+  "「learning rate」という呼び方の用語を説明してください。": {
+    "needs_review": false,
+    "must_include": [
+      "更新",
+      "パラメータ"
+    ]
+  },
+  "用語集にある「エポック」の定義を教えてください。": {
+    "needs_review": false,
+    "must_include": [
+      "1周"
+    ]
+  },
+  "初めて学ぶ人に「エポック」の意味と特徴を説明してください。": {
+    "needs_review": false,
+    "must_include": [
+      "1周"
+    ]
+  },
+  "「epoch」という呼び方の用語を説明してください。": {
+    "needs_review": false,
+    "must_include": [
+      "1周"
+    ]
+  },
+  "用語集にある「過学習」の定義を教えてください。": {
+    "needs_review": false,
+    "must_include": [
+      "学習データ",
+      "未知"
+    ]
+  },
+  "初めて学ぶ人に「過学習」の意味と特徴を説明してください。": {
+    "needs_review": false,
+    "must_include": [
+      "学習データ",
+      "未知"
+    ]
+  },
+  "「overfitting」という呼び方の用語を説明してください。": {
+    "needs_review": false,
+    "must_include": [
+      "学習データ",
+      "未知"
+    ]
+  },
+  "「ベクトルデータベース」とは何ですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "「検索拡張生成」とは何ですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "「FlashAttention」とは何ですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "「バッチ正規化」とは何ですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "「拡散モデル」とは何ですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "「Vision Transformer」とは何ですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  }
+}
