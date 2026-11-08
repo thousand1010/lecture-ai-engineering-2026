@@ -1,0 +1,390 @@
+{
+  "summary": {
+    "label": "after",
+    "n": 42,
+    "format_rate": 0.9523809523809523,
+    "content_rate": 0.07142857142857142,
+    "both_rate": 0.07142857142857142,
+    "seconds": 195.6
+  },
+  "rows": [
+    {
+      "question": "用語集にある「ハルシネーション」の定義を教えてください。",
+      "raw": "{\"answer\": \"学習データの生成過程やモデルの出力に依存せず、ランダムに生成した結果。真偽値で表す（生成した結果が真偽値か、偽偽値か）。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "初めて学ぶ人に「ハルシネーション」の意味と特徴を説明してください。",
+      "raw": "{\"answer\": \"学習用のLLMで質問を投げかけ、結果を返すだけでモデルがモデルとして学習した結果を、真偽値で判断して評価する手法。真偽値で評価するのは、モデルの出力が真偽値に収まれば良いだけなので、出力の質や精度に左右される。評価の精度を上げるために、出力を真偽値にしない。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「幻覚」という呼び方の用語を説明してください。",
+      "raw": "{\"answer\": \"学習データの分布と実際の出力の分布が異なるため、モデルが出力する結果が、真偽値で表す「真偽の幻覚」に見える。本講座ではこの現象を「幻覚」と呼ぶ。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "用語集にある「事前学習」の定義を教えてください。",
+      "raw": "{\"answer\": \"モデルは大量のテキストで学習し、その知識を、特定の質問やタスクに合わせた短いテキストで使えるようになるプロセス。LLMは大量のテキストを記憶し、質問に答えてしまうため、事前学習は回答の質や範囲を大きく左右する。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "初めて学ぶ人に「事前学習」の意味と特徴を説明してください。",
+      "raw": "{\"answer\": \"大規模言語モデル（LLM）が大量のテキストを学習する前の状態。モデルは学習データに過ぎず、知識や能力は学習していない。このため、入力データに依存し、入力が変われば出力も変わる。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「pre-training」という呼び方の用語を説明してください。",
+      "raw": "{\"answer\": \"モデルが大量のテキストで学習させる前の準備段階。学習データに埋め込まれたプロンプトや知識を、大量のサンプルで教える。本講座ではLLMの事前学習を「pre-training」と呼ぶ。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "用語集にある「ファインチューニング」の定義を教えてください。",
+      "raw": "{\"answer\": \"モデルの知識や表現力に近づけるために、外部のデータやツールの入力・出力をモデルに渡すプロセス。本講座では「LLMを特定のタスクに絞るためのモデル選択とツール使用の組み合わせ」と題する第1回の講座で、第2回まで進める。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "初めて学ぶ人に「ファインチューニング」の意味と特徴を説明してください。",
+      "raw": "{\"answer\": \"モデルの知識や表現力に追加させるための学習方法。外部のデータやルールをモデルに渡して、モデルがそのデータを学習して、最終結果をモデルに返す。LLMはテキストに慣れているため、外部のルールや知識をモデルに渡すのが自然。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「fine-tuning」という呼び方の用語を説明してください。",
+      "raw": "{\"answer\": \"モデルの知識や表現を、特定のテキストやタスクで満たすために、少量のデータで学習させる手法。学習するパラメータはモデルの大部分を占めるため、学習中に変数として扱われる。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "用語集にある「教師ありファインチューニング（SFT）」の定義を教えてください。",
+      "raw": "{\"answer\": \"入力と出力のペアでモデルを教える方法。入力には質問や指示、出力には回答を指定する。本講座ではLLMを特定の役割や形式に合わせるために使う。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "初めて学ぶ人に「教師ありファインチューニング（SFT）」の意味と特徴を説明してください。",
+      "raw": "{\"answer\": \"学習用のテキストベースのモデルを、指定された質問と答えのペアで教える手法。質問をモデルに渡すだけでモデルが答えを学習する。学習データは入力・出力のペアで構成し、モデルを訓練する。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「SFT」という呼び方の用語を説明してください。",
+      "raw": "{\"answer\": \"教師の例（label）と、その例に準じた出力をモデルに与えることで、モデルの知識や表現を学習させる手法。LLMは大量の例で学習し、SFTでは少量の例でモデルの知識を学習させる。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "用語集にある「PEFT」の定義を教えてください。",
+      "raw": "{\"answer\": \"低ランクモデルを高ランクモデルに匹敵する性能と学習コストに達させるために使う技術。重みを小さなベクトルにまとめることでメモリと計算を減らす。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "初めて学ぶ人に「PEFT」の意味と特徴を説明してください。",
+      "raw": "{\"answer\": \"大規模モデルの全パラメータを小さなモデルにコピーする手法。学習コストと計算量に大きく影響し、学習率を上げるほど結果も増える。本講座では「低コスト・低計算量・安定した学習」という3つの条件を満たすために使う。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「Parameter-Efficient Fine-Tuning」という呼び方の用語を説明してください。",
+      "raw": "{\"answer\": \"モデルの学習に必要なパラメータ数（学習率、エポック数など）を小さく抑えるために、より少ないデータや少ない計算資源でモデルを微调させること。本講座では「学習率を小さくし、エポック数を減らす」という方法で説明する。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "用語集にある「LoRA」の定義を教えてください。",
+      "raw": "{\"answer\": \"低ランクアプロンプトのロジックを、高ランクアプロンプトの出力に与えるための、小さなパラメータを交換する手法。学習するパラメータはLoRAの2つの行列だけ（低ランクのモデルの重みと、出力のベクトル）。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "初めて学ぶ人に「LoRA」の意味と特徴を説明してください。",
+      "raw": "{\"answer\": \"低ランクモデルの重みを、学習する項目（入力・出力・ロジック）に絞って、学習する重みを増やすための学習する重みを減らすための学習する重みを増やすための学習する重みを減らすための学習する重みを増やすための学習する重みを減らすための学習する重みを増やすための学習する重みを減らすための学習する重みを増やすための学習する重みを減らすための学習する重みを増やすための学習する重みを減らすための学習する重みを増やすための学習する重みを減らすための学習する重みを増やすための学習する重みを減らすための学習する重みを増やすための学習する重みを減らすための学習する重みを増やすための学習する重みを減らすための学習する重みを増やすための学習する重みを減らすための学習する重みを増やすための学習する重みを減らすための学習する重みを増やすための学習する重みを減らすための学習する重みを増やすための学習する重みを減らすための学習する重みを増やすための学習する重みを減らすための学習する重みを増やすための学習する重みを減らすための学習する重みを増",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「Low-Rank Adaptation」という呼び方の用語を説明してください。",
+      "raw": "{\"answer\": \"モデルの低ランク（低次元）の表示を、新しいタスクやデータに合わせた高いランク（高次元）に拡張する手法。本講座の第2回演習では、LLMを低ランクから高いランクへ拡張して、入力と出力を同じ次元に合わせる。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "用語集にある「ランク（LoRAのr）」の定義を教えてください。",
+      "raw": "{\"answer\": \"LoRAの学習率の1/100。rが大きいほど学習率が高くなり、学習が速く、メモリも使うも多くなる。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "初めて学ぶ人に「ランク（LoRAのr）」の意味と特徴を説明してください。",
+      "raw": "{\"answer\": \"LoRAで学習する行列の大きさを決定する超パラメータ。rが大きいほどモデルの容量が増え、学習するパラメータも増える。学習速度はrに反し、メモリはr^2 に比例する。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「rank」という呼び方の用語を説明してください。",
+      "raw": "{\"answer\": \"LLMが検索結果を優先して順位を決める仕組み。Googleの「ranking」と同じ意味。検索エンジンが結果を返す側は「ranking engine」、LLMは「ranking model」と呼ばれる。本講座では「ranking」と「ranking model」とを同じものとする。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "用語集にある「QLoRA」の定義を教えてください。",
+      "raw": "{\"answer\": \"LLMのモデルの重みを、メモリを節約しつつも、質問と答えの差を大きくする学習データに分割した重み。Pydantic AIの Lora 1.0 では `LoRAConfig` で設定できる。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "初めて学ぶ人に「QLoRA」の意味と特徴を説明してください。",
+      "raw": "{\"answer\": \"PyTorchのモデルをGPUで動かすためのメモリ効率を上げる技術。学習用の重み（weight）をGPUのメモリに渡す。モデルの容量は変わらないが、メモリ使用量は大幅に減る。本講座では第1回の演習で、この重みをGPUに渡すことと、その後の処理をGPUで進めること（LoRA）を1回の演習で体験する。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「Quantized LoRA」という呼び方の用語を説明してください。",
+      "raw": "{\"answer\": \"LoRAのモデルをより小さなサイズに缩る方法。学習するパラメータを大幅に減らすため、メモリ使用量と計算量ともに大幅に小さくなる。本講座では第1回の演習で、Pydantic AIのLoRAモデルを quantized 1bit、2bit、4bit、8bit、16bit、32bit、64bit、128bit、256bit、512bit、1024bit、2048bit、4096bit、8192bit、16384bit、32768bit、65536bit、131072bit、262144bit、524288bit、1048576bit、2097152bit、4194304bit、8388608bit、16777216bit、33554432bit、67108864bit、134217728bit、26843545",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "用語集にある「量子化」の定義を教えてください。",
+      "raw": "{\"answer\": \"モデルの重みをより小さな数値で表し、メモリ使用量や計算量を抑える技術。浮動小数点数を整数に切り、精度を犠牲にして速度とメモリを上げる。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "初めて学ぶ人に「量子化」の意味と特徴を説明してください。",
+      "raw": "{\"answer\": \"モデルの出力をより小さなデータ（例：16ビットから8ビット）に変える技術。メモリ使用量と計算量に左右され、精度が少し落ちる。本講座ではPydantic AIのQwen2.5-VL-Max-Qで、出力を16ビットから8ビットに量子化し、モデルを1GBのメモリで動かす。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「quantization」という呼び方の用語を説明してください。",
+      "raw": "{\"answer\": \"モデルの参数を小さくして、メモリ使用量や出力の精度を上げる技術。FP16、INT8、4bitなど。本講座では quantized LLM（LLM+Qwen3.5）を扱う。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "用語集にある「学習率」の定義を教えてください。",
+      "raw": "{\"answer\": \"1回のエポックでモデルが学習すべきパラメータの増分を決定する超参数。大きすぎると過学習し、小さすぎると学習が進まない。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "初めて学ぶ人に「学習率」の意味と特徴を説明してください。",
+      "raw": "{\"answer\": \"1回の更新でパラメータをどれだけ動かすかを決める超重要なパラメータ。大きすぎると学習が走らない（振る舞いを変えないため）。小さすぎると収束しにくくなる。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「learning rate」という呼び方の用語を説明してください。",
+      "raw": "{\"answer\": \"学習の回数を増やすために使う学習率。小さすぎると収束しにくく、大きすぎると過学習しやすい。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "用語集にある「エポック」の定義を教えてください。",
+      "raw": "{\"answer\": \"1回の学習サイクルでモデルが学習したパラメータの数。学習率を上げるほどエポック数が増え、学習が速くなる。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "初めて学ぶ人に「エポック」の意味と特徴を説明してください。",
+      "raw": "{\"answer\": \"1回の学習サイクルでモデルが学習したパラメータの総数。学習の進み具合を測る指標の一つ。学習周期を短くするとエポックが少くなり、学習が速くなる。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「epoch」という呼び方の用語を説明してください。",
+      "raw": "{\"answer\": \"1回のトレーニングサイクル（学習ステップ）でモデルが学習した値を固定し、次のサイクルから始めます。学習率を小さくするとepochが増え、学習がゆっくり進み、安定した結果を得やすくなります。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "用語集にある「過学習」の定義を教えてください。",
+      "raw": "{\"answer\": \"モデルがデータに過ぎず、学習してない状態。評価データにもっとも似ている。学習中に過学習し、評価で劣る。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "初めて学ぶ人に「過学習」の意味と特徴を説明してください。",
+      "raw": "{\"answer\": \"学習データに過ぎないモデル。テストデータに比べて表現力が大きく落ち、実用的なツールやアプリでは機能に左右される。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「overfitting」という呼び方の用語を説明してください。",
+      "raw": "{\"answer\": \"モデルがデータに過ぎない、あるいは学習データの分布に合わせた設計がずれている。評価データにない、評価データが分布に合わない、評価が過学習したモデルで、評価が良すぎる結果になる。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「ベクトルデータベース」とは何ですか？",
+      "raw": "{\"answer\": \"入力と出力を2つのベクトルで表す、検索を文脈に依る、検索結果を出力する、という1つのモデルの役割を1つのベクトルで表す。LLMの質問は「検索」という動作に過ぎない。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "「検索拡張生成」とは何ですか？",
+      "raw": "{\"answer\": \"LLMが質問に答えていない情報や、別の分野の知識を、質問の枠組み（例：SNSの投稿）に合わせて提案・書き換えて生成するプロセス。本講座の第2回演習では、検索結果をSNS投稿の形式で文章に書き換えて、モデルに提案し、モデルが書き換えて答えていく。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "「FlashAttention」とは何ですか？",
+      "raw": "{\"answer\": \"LLMの出力をより自然に伝えるために、モデルの出力を時間とともに変換する仕組み。出力の長さやノイズを小さくするため、出力を長いテキストにまとめる。本講座では第1回の演習で、この仕組みをモデルに渡す。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "「バッチ正規化」とは何ですか？",
+      "raw": "{\"answer\": \"MCPサーバーの起動時に、複数のツールを1回の起動で呼び出せるようにする手法。ツール名を同じくして、同じ引数の形式と戻りの形式を指定し、サーバーが同じ数回の起動でツールを呼び出す。本講座では「ツール名を同じくす」というのが基本。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "「拡散モデル」とは何ですか？",
+      "raw": "{\"answer\": \"LLMが外部のデータやモデルから学習し、その出力をそのままLLMに渡すこと。公開されているデータやモデルをコピー・アップロードして、その出力をLLMに渡す。本講座では「テキストエディタの出力をLLMに渡す」のが典型例。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "「Vision Transformer」とは何ですか？",
+      "raw": "{\"answer\": \"多視点の理解を、同じ入力で複数の視点から同時に取得するモデル。LLMの画像入力（Vision Encoder）＋Transformerの注意力を、同じ入力で複数の視点の注意力をかける。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    }
+  ]
+}

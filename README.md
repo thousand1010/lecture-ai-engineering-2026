@@ -32,6 +32,13 @@ uv run python -m app.ask "LoRAとは何ですか？"
 
 詳しい手順は [lectures/01/problem.md](lectures/01/problem.md) を見てください。
 
+第1回の発展課題として、応答時間・トークン数をモデルや質問ごとに比較できます。
+実行方法と無料枠のレート制限の考察は [比較手順](lectures/01/benchmark.md) を参照してください。
+
+```bash
+uv run python -m app.benchmark --models gemini-3.5-flash-lite gemini-3.1-flash-lite --repeat 3
+```
+
 ## 構成
 
 ```

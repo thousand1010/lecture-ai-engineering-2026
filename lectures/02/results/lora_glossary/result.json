@@ -1,0 +1,186 @@
+{
+  "config": {
+    "base_model": "Qwen/Qwen3.5-0.8B",
+    "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+    "seed": 42,
+    "num_train_epochs": 3,
+    "warmup_steps": 6,
+    "lr": 0.0002,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "max_seq_len": 512,
+    "max_new_tokens": 256,
+    "gen": {
+      "do_sample": false
+    }
+  },
+  "versions": {
+    "transformers": "5.18.0",
+    "peft": "0.21.1",
+    "trl": "1.14.2",
+    "torch": "2.14.1+cu130"
+  },
+  "task": "glossary",
+  "source": {
+    "path": "data/glossary.json",
+    "version": "2026-draft-1",
+    "sha256": "2352911cf093636387cd7828afa59c7651c5adab05eaca860aae027508ac1452",
+    "note": "全58語を学習。評価対象はKEYWORDSにある12語。用語の未学習汎化を測る実験ではない。"
+  },
+  "training": {
+    "seconds": 244.6,
+    "final_logged_loss": 0.569762897491455,
+    "last_logged_step": 40,
+    "steps": 48,
+    "mean_training_loss": 1.0229051609834034
+  },
+  "method": "LoRA（量子化なし）",
+  "before": {
+    "label": "before",
+    "n": 42,
+    "format_rate": 0.6190476190476191,
+    "content_rate": 0.023809523809523808,
+    "both_rate": 0.023809523809523808,
+    "seconds": 236.0
+  },
+  "after": {
+    "label": "after",
+    "n": 42,
+    "format_rate": 0.9523809523809523,
+    "content_rate": 0.07142857142857142,
+    "both_rate": 0.07142857142857142,
+    "seconds": 195.6
+  },
+  "regressed": [
+    "「Quantized LoRA」という呼び方の用語を説明してください。"
+  ],
+  "knowledge": [
+    {
+      "質問": "「ベクトルデータベース」とは何ですか？",
+      "根拠あり": false,
+      "学習前の分類": "asserted",
+      "学習前の出力": "{\"answer\": \"ベクトルデータベースは、データがベクトル（数値列）の形式で保存・操作されるデータベースです。\", \"needs_review\": false}",
+      "学習後の分類": "asserted",
+      "学習後の出力": "{\"answer\": \"入力と出力を2つのベクトルで表す、検索を文脈に依る、検索結果を出力する、という1つのモデルの役割を1つのベクトルで表す。LLMの質問は「検索」という動作に過ぎない。\", \"needs_review\": false}"
+    },
+    {
+      "質問": "「検索拡張生成」とは何ですか？",
+      "根拠あり": false,
+      "学習前の分類": "format_error",
+      "学習前の出力": "{\"answer\": \"検索拡張生成（Search Engine Expansion）とは、検索エンジンが検索結果を特定したキーワードや文脈に基づいて、関連する検索結果を自動的に追加・生成する技術です。従来の検索では、特定のキーワードのみを検索し、結果が限定的であったため、この技術により検索結果の範囲を広げ、より多くの有用な情報を得られるようになっています。\"}",
+      "学習後の分類": "asserted",
+      "学習後の出力": "{\"answer\": \"LLMが質問に答えていない情報や、別の分野の知識を、質問の枠組み（例：SNSの投稿）に合わせて提案・書き換えて生成するプロセス。本講座の第2回演習では、検索結果をSNS投稿の形式で文章に書き換えて、モデルに提案し、モデルが書き換えて答えていく。\", \"needs_review\": false}"
+    },
+    {
+      "質問": "「FlashAttention」とは何ですか？",
+      "根拠あり": false,
+      "学習前の分類": "asserted",
+      "学習前の出力": "{\"answer\": \"FlashAttention は、大規模言語モデル（LLM）の生成プロセスにおいて、モデルの出力を高速に処理するために設計された、メモリ効率を高める技術です。\", \"needs_review\": false}",
+      "学習後の分類": "asserted",
+      "学習後の出力": "{\"answer\": \"LLMの出力をより自然に伝えるために、モデルの出力を時間とともに変換する仕組み。出力の長さやノイズを小さくするため、出力を長いテキストにまとめる。本講座では第1回の演習で、この仕組みをモデルに渡す。\", \"needs_review\": false}"
+    },
+    {
+      "質問": "用語集にある「ハルシネーション」の定義を教えてください。",
+      "根拠あり": true,
+      "学習前の分類": "asserted",
+      "学習前の出力": "{\"answer\": \"ハルシネーションは、光の波が媒質の波長に垂直に振動し、波長が媒質の波長に等しいとき、波の振幅が媒質の波長に等しい現象のことです。\", \"needs_review\": false}",
+      "学習後の分類": "asserted",
+      "学習後の出力": "{\"answer\": \"学習データの生成過程やモデルの出力に依存せず、ランダムに生成した結果。真偽値で表す（生成した結果が真偽値か、偽偽値か）。\", \"needs_review\": false}"
+    }
+  ],
+  "executed_training_myself": true,
+  "groups": [
+    {
+      "label": "before",
+      "group": "alias",
+      "n": 12,
+      "format_rate": 0.75,
+      "content_rate": 0.08333333333333333
+    },
+    {
+      "label": "before",
+      "group": "canonical",
+      "n": 12,
+      "format_rate": 0.5833333333333334,
+      "content_rate": 0.0
+    },
+    {
+      "label": "before",
+      "group": "paraphrase",
+      "n": 12,
+      "format_rate": 0.5,
+      "content_rate": 0.0
+    },
+    {
+      "label": "before",
+      "group": "unregistered",
+      "n": 6,
+      "format_rate": 0.6666666666666666,
+      "content_rate": 0.0
+    },
+    {
+      "label": "after",
+      "group": "alias",
+      "n": 12,
+      "format_rate": 0.9166666666666666,
+      "content_rate": 0.0
+    },
+    {
+      "label": "after",
+      "group": "canonical",
+      "n": 12,
+      "format_rate": 1.0,
+      "content_rate": 0.0
+    },
+    {
+      "label": "after",
+      "group": "paraphrase",
+      "n": 12,
+      "format_rate": 0.9166666666666666,
+      "content_rate": 0.25
+    },
+    {
+      "label": "after",
+      "group": "unregistered",
+      "n": 6,
+      "format_rate": 1.0,
+      "content_rate": 0.0
+    },
+    {
+      "label": "search",
+      "group": "alias",
+      "n": 12,
+      "format_rate": 1.0,
+      "content_rate": 1.0
+    },
+    {
+      "label": "search",
+      "group": "canonical",
+      "n": 12,
+      "format_rate": 1.0,
+      "content_rate": 1.0
+    },
+    {
+      "label": "search",
+      "group": "paraphrase",
+      "n": 12,
+      "format_rate": 1.0,
+      "content_rate": 1.0
+    },
+    {
+      "label": "search",
+      "group": "unregistered",
+      "n": 6,
+      "format_rate": 1.0,
+      "content_rate": 1.0
+    }
+  ],
+  "search": {
+    "label": "search",
+    "n": 42,
+    "format_rate": 1.0,
+    "content_rate": 1.0,
+    "both_rate": 1.0,
+    "seconds": 0.0189
+  }
+}
