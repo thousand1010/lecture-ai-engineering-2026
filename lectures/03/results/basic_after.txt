@@ -1,0 +1,22 @@
+[model] gemini-3.5-flash-lite
+LoRAとQLoRAの主な違いは、**ベースモデルの重みをそのまま使うか、量子化してメモリを節約するか**という点にあります。
+
+講座の用語集によると、それぞれの定義は以下の通りです。
+
+* **LoRA（第2回）**
+  事前学習済みの重みは固定したまま、重みの更新分を2つの小さな行列の積（低ランク行列）で表し、その小さな行列だけを学習するPEFT（Parameter-Efficient Fine-Tuning）手法です。学習するパラメータが少なく、学習結果（アダプタ）も小さいファイルで保存できます。
+
+* **QLoRA（第2回）**
+  ベースモデルの重みを4ビットなどに量子化（Quantization）してメモリを大きく節約したうえで、LoRAで学習を行う手法です。これにより、より大きなモデルを小さなGPU環境でも扱えるようになります。
+
+---
+
+**【確認問題】**
+LoRAにおいて、重みの更新分を表現するために導入される「2つの小さな行列」の大きさを決める、第2回で学ぶ重要なハイパーパラメータは何でしょうか？（用語集にも登場する言葉です）
+
+--- trace ---
+[tool call]   search_glossary({'query': 'LoRA'})
+[tool call]   search_glossary({'query': 'QLoRA'})
+[tool return] search_glossary -> [{"term": "LoRA", "lecture": 2, "definition": "事前学習済みの重みは固定したまま、重みの更新分を2つの小さな行列の積（低ランク行列）で表し、その小さな行列だけを学習するPEFT手法。学習するパラ…
+[tool return] search_glossary -> [{"term": "QLoRA", "lecture": 2, "definition": "ベースモデルの重みを4ビットなどに量子化してメモリを節約したうえで、LoRAで学習する手法。より大きなモデルを小さなGPUで扱える。本講座の第2…
+[usage] RunUsage(cost=Decimal('0.0010836'), details={'text_prompt_tokens': 1212}, input_text_tokens=1212, input_tokens=1212, output_tokens=288, requests=2, tool_calls=2)

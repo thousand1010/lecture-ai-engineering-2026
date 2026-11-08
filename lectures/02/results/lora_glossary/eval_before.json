@@ -1,0 +1,390 @@
+{
+  "summary": {
+    "label": "before",
+    "n": 42,
+    "format_rate": 0.6190476190476191,
+    "content_rate": 0.023809523809523808,
+    "both_rate": 0.023809523809523808,
+    "seconds": 236.0
+  },
+  "rows": [
+    {
+      "question": "用語集にある「ハルシネーション」の定義を教えてください。",
+      "raw": "{\"answer\": \"ハルシネーションは、光の波が媒質の波長に垂直に振動し、波長が媒質の波長に等しいとき、波の振幅が媒質の波長に等しい現象のことです。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "初めて学ぶ人に「ハルシネーション」の意味と特徴を説明してください。",
+      "raw": "{\"answer\": \"ハルシネーションは、光の波が媒質の波長に沿って周期的に振幅が変化し、波の強度が変化するという現象です。初めて学ぶ人に説明すると、光が波長を走っている時、波の振幅が最大値で最も強く、波長を走っている時、振幅が最小値で最も弱く、波長を走っている時、振幅が最大値で最も強く、というように、波の振幅が波長に随って変化するという現象を説明します。特徴としては、波の振幅が波長に随って変化し、波の強度が波長に随って変化するという特徴があります。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「幻覚」という呼び方の用語を説明してください。",
+      "raw": "{\"answer\": \"幻覚は、脳や視覚系が正常な状態では生じないが、異常な状態では生じる現象です。例えば、視覚障害者や脳梗塞患者など、視覚機能に異常がある場合、周囲の物体や人物が映っているように見えても、実際にはその存在しない状態を指します。また、幻覚は「幻覚」という言葉自体が由来するもので、古代ギリシャ語で「幻」を意味する言葉から派生したものです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "用語集にある「事前学習」の定義を教えてください。",
+      "raw": "{\"answer\": \"事前学習とは、学習者が学習する前に、学習する対象の知識や技能を習得するプロセスを指します。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "初めて学ぶ人に「事前学習」の意味と特徴を説明してください。",
+      "raw": "{\"answer\": \"事前学習とは、学習者が学習する前に、学習する対象の知識や技能を事前に習得するプロセスです。特徴としては、学習者の知識基盤がより豊かになり、学習の効率化と成功の確率が高まることを特徴としています。初めて学ぶ人に特に重要なのは、事前学習が「知識の蓄積」として機能し、学習の質を向上させることです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「pre-training」という呼び方の用語を説明してください。",
+      "raw": "{\"answer\": \"pre-training は、モデルの学習において、データセットから学習された表現を、より多くのデータセットから学習された表現へと学習させるプロセスを指します。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "用語集にある「ファインチューニング」の定義を教えてください。",
+      "raw": "{\"answer\": \"ファインチューニングは、製品やシステムを製造・使用中に、より良い性能や品質、安全性、耐久性、信頼性、コスト効率、または特定の機能を実現するために、製造・使用後の再調整や再設計を行うプロセスを指します。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "初めて学ぶ人に「ファインチューニング」の意味と特徴を説明してください。",
+      "raw": "{\"answer\": \"ファインチューニングは、製品やサービスが最初から設計された状態から、実際の使用状況や使用者のニーズに合わせて、より良い性能や品質を向上させるプロセスです。初めて学ぶ人に説明すると、製品が最初から設計された状態から、実際の使用状況や使用者のニーズに合わせて、より良い性能や品質を向上させるプロセスです。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「fine-tuning」という呼び方の用語を説明してください。",
+      "raw": "{\"answer\": \"fine-tuning は、モデルの学習プロセスにおいて、特定のデータセットやタスクに対して、モデルの知識をより深く学習し、より高い精度を達成するためのプロセスです。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "用語集にある「教師ありファインチューニング（SFT）」の定義を教えてください。",
+      "raw": "{\"answer\": \"教師ありファインチューニング（SFT）は、教師データを用いて学習した言語モデルを、その学習した知識に基づいて、新しい問題に対して回答する能力を高める技術です。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "初めて学ぶ人に「教師ありファインチューニング（SFT）」の意味と特徴を説明してください。",
+      "raw": "{\"answer\": \"教師ありファインチューニング（SFT）は、大規模言語モデル（LLM）の学習において、教師データから学習されたパターンを、新しい入力文脈に適用する手法です。初めて学ぶ人に説明すると、LLM は「人間が書いた文章や、特定の文脈で使われる言葉の組み合わせ」を学習して、それらを使って新しい文脈で文章を生成する仕組みです。例えば、「猫は寝ている」という文脈から、猫が寝ているという表現を学習し、その表現を使って「猫は夜に寝ている」という新しい文脈で生成するプロセスを SFT と呼びます。特徴としては、学習された表現がより自然で、人間が理解しやすい表現に変換され、生成された文章の質が高まるという点です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「SFT」という呼び方の用語を説明してください。",
+      "raw": "{\"answer\": \"SFT は、生成式タスク（Generative Task）の略称で、生成モデル（Generative Model）の学習において、入力データから出力データを生成するタスクを指します。学習プロセスにおいて、モデルが学習する主なタスクは「生成タスク」と呼ばれ、SFT（Supervised Fine-Tuning）という用語で説明されます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "用語集にある「PEFT」の定義を教えてください。",
+      "raw": "{\"answer\": \"PEFT は、大規模言語モデル（LLM）のトレーニングにおいて、パラメータを学習する際に使用される技術。主に「パラメータエントリ圧縮（Parameter Efficiency Training）」や「パラメータエントリ拡張（Parameter Enrichment Training）」などの手法を指し、モデルのパラメータ数を削減し、学習速度を向上させることを目的としています。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "初めて学ぶ人に「PEFT」の意味と特徴を説明してください。",
+      "raw": "{\"answer\": \"PEFT は、大規模言語モデル（LLM）の「パラメータエントリ（パラメータの個体）を個別に分割し、各パラメータを個別に学習する技術」です。初めて学ぶ人に説明すると、大規模言語モデルは「文字列」を学習するのではなく、「文字列の個体」を個別に学習する仕組みです。例えば、「Hello World」の文字列を学習するのではなく、「Hello」の個体、「World」の個体など、個別に学習して最終的に「Hello World」の文字列を生成する仕組みです。特徴として、学習速度が速く、モデルの精度が向上し、より多くのパラメータを学習できることが挙げられます。ただし、学習初期に「PEFT」の概念が理解されにくい場合、用語集に登録されていないため「確認が必要」として回答します。\"",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「Parameter-Efficient Fine-Tuning」という呼び方の用語を説明してください。",
+      "raw": "{\"answer\": \"Parameter-Efficient Fine-Tuning (PEFT) は、モデルのパラメータを学習する際に、より少ないパラメータを学習する手法を指します。この手法は、モデルの学習効率を向上させ、計算コストを削減する目的で開発されました。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "用語集にある「LoRA」の定義を教えてください。",
+      "raw": "{\"answer\": \"LoRA (Low-Rank Adaptation) は、大規模言語モデル（LLM）のトレーニングにおいて、モデルの知識をより効率的に学習するための技術です。モデルの初期パラメータを低次元のベクトル（LoRA 基座）として学習し、最終的な知識をより高い次元のベクトル（LoRA 拡張）として追加学習することで、計算コストを削減し、学習速度を向上させる方法です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "初めて学ぶ人に「LoRA」の意味と特徴を説明してください。",
+      "raw": "{\"answer\": \"LoRA（Low-Rank Adaptation）は、大規模言語モデル（LLM）の学習において、モデルの知識を「低秩（Low-Rank）」に分解し、より軽量で効率的に学習させる技術です。特徴として、モデルの知識を「低秩」に分解し、より軽量で効率的に学習させることができます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「Low-Rank Adaptation」という呼び方の用語を説明してください。",
+      "raw": "{\"answer\": \"Low-Rank Adaptation (LRA) は、低秩変換（Low-Rank Transformation）を用いて、学習されたモデルの出力を低秩な変換で再構成し、より効率的に学習・評価する手法です。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "用語集にある「ランク（LoRAのr）」の定義を教えてください。",
+      "raw": "{\"answer\": \"LoRA (Low-Rank Adaptation) の r は、モデルの低秩分解のランク（dimensionality reduction）の階数であり、モデルの表現容量を決定する重要なパラメータです。ランクが小さいほど、モデルの表現容量が小さくなり、学習速度が速くなります。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "初めて学ぶ人に「ランク（LoRAのr）」の意味と特徴を説明してください。",
+      "raw": "{\"answer\": \"LoRA（低秩近似）の「ランク（r）」は、モデルの表現能力を決定するパラメータです。ランクが小さいほど、モデルはより単純な表現（低次元）で学習し、計算負荷も低くなります。しかし、ランクが小さすぎると、学習の収束が遅くなり、最終的な精度が低下する可能性があります。適切なランク（通常は 4〜8 程度）を調整することで、学習速度と精度のバランスを最適化できます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「rank」という呼び方の用語を説明してください。",
+      "raw": "{\"answer\": \"「rank」は、特定の項目やオブジェクトの重要性、順位、または評価値を指す用語です。例えば、プロジェクトの重要性、ユーザーの満足度、または評価スコアを「1〜5 段階のランク」で示すこともあります。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "用語集にある「QLoRA」の定義を教えてください。",
+      "raw": "{\"answer\": \"QLoRA (Quantized Large Language Model) は、大規模言語モデル（LLM）の出力を非常に小さなパラメータ（通常は 4〜8 ビット）で圧縮したバージョンのことです。これにより、計算コストを大幅に削減し、より高速な処理が可能になります。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "初めて学ぶ人に「QLoRA」の意味と特徴を説明してください。",
+      "raw": "{\"answer\": \"QLoRA は、大規模言語モデル（LLM）の「Qwen」シリーズの一種で、特に「Qwen3.5」のバージョンです。特徴として、Qwen3.5 は「Qwen2.5」よりも大幅に強化された性能を持ち、特に「Qwen-Max」モデルでは「Qwen2.5」の性能を 1.5 倍に引き上げ、さらに「Qwen3.5」では「Qwen2.5」の性能を 2.5 倍に引き上げました。また、Qwen3.5 は「Qwen2.5」の「Qwen-Max」モデルの性能を 2.5 倍に引き上げ、さらに「Qwen3.5」では「Qwen2.5」の性能を 2.5 倍に引き上げました。また、Qwen3.5 は「Qwen2.5」の「Qwen-Max」モデルの性能を 2.5 倍に引き上げ、さらに「Qwen3.5」では「Qwen2.5」の性能を 2.5 倍に引き上げました。また、",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「Quantized LoRA」という呼び方の用語を説明してください。",
+      "raw": "{\"answer\": \"Quantized LoRA は、LoRA（低精度ロア）のモデルを量子化（量子化）した形式で、量子計算や量子機械学習において利用される技術です。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "用語集にある「量子化」の定義を教えてください。",
+      "raw": "{\"answer\": \"量子化は、物理的な量（エネルギー、角運動量、電荷など）を分立された最小単位（量子）で表現する現象や概念です。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "初めて学ぶ人に「量子化」の意味と特徴を説明してください。",
+      "raw": "{\"answer\": \"量子化とは、物理現象や物質の性質を「量子」の単位（最小単位）で表現する概念です。特に、電磁波や光の振動数、電子の振動数、原子のエネルギーレベルなどが量子化されていることを意味します。初めて学ぶ人に説明すると、単に「小さな単位」ではなく、自然界の現象が「量子」の最小単位でしか現れないという根本的な事実を伝えることが重要です。特徴としては、エネルギーが分立された（離散的）ものしか存在しないこと、量子力学の基礎となる概念であること、そして量子力学を説明する上で不可欠な概念であることが挙げられます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「quantization」という呼び方の用語を説明してください。",
+      "raw": "{\"answer\": \"量子化は、量子状態をより小さな単位（量子）に分割し、その状態を記述する際に使用される用語です。例えば、量子力学の波動関数や量子ビット（qubit）の状態を、より小さな量子状態（量子位）に分解して記述する際に使われます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "用語集にある「学習率」の定義を教えてください。",
+      "raw": "{\"answer\": \"学習率（Learning Rate）は、ニューラルネットワークや機械学習アルゴリズムにおいて、入力データに対して出力を調整する際に使用するパラメータの調整値です。学習率が小さければ、モデルはより多くのデータに学習し、学習速度が速くなりますが、学習率が大きければ、学習速度が遅くなり、過学習（Overfitting）のリスクが高まります。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "初めて学ぶ人に「学習率」の意味と特徴を説明してください。",
+      "raw": "{\"answer\": \"学習率とは、学習者が学習した知識や技能を、その学習期間中に得た学習の成果として評価する指標です。学習率が高いほど、学習者が学習した成果がより多く得られることを意味します。特徴として、学習者が学習した成果を評価する際に、学習期間や学習の質（学習の深さ）を考慮する必要があります。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「learning rate」という呼び方の用語を説明してください。",
+      "raw": "{\"answer\": \"学習率（learning rate）は、ニューラルネットワークや機械学習アルゴリズムで、各層のニューロンに対して、入力データに対して出力を調整する際に使用するパラメータです。学習率の値が小さければ、学習速度が速く、学習が効率的に進みます。学習率の値が大きい場合は、学習速度が遅く、学習がゆっくり進みます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "用語集にある「エポック」の定義を教えてください。",
+      "raw": "{\"answer\": \"エポックは、時間軸上の重要な境界点で、その前後に大きな変化や転換点（転換点）が発生したことを示す概念です。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "初めて学ぶ人に「エポック」の意味と特徴を説明してください。",
+      "raw": "{\"answer\": \"エポックは、時間軸上の重要な境界点（例：1990 年、1995 年など）を指し、その前後に大きな変化や転換点が生じた時期を意味します。特徴として、その前後に大きな変化や転換点が生じた時期を意味します。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「epoch」という呼び方の用語を説明してください。",
+      "raw": "{\"answer\": \"epoch は、学習のサイクル単位として使われる用語で、学習プロセスにおける学習ステップの単位を指します。例えば、ニューラルネットワークの学習では、データセットのサイズを 1000 個に分割し、各 100 個を 10 個のepoch として処理する例があります。また、機械学習のアルゴリズムの学習速度や学習率の計算単位としても使われます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "用語集にある「過学習」の定義を教えてください。",
+      "raw": "{\"answer\": \"過学習とは、学習者が学習対象のデータに過度に依存し、学習結果がデータ分布に依存する現象を指します。過学習は、学習者が学習対象のデータに過度に依存し、学習結果がデータ分布に依存する現象を指します。過学習は、学習者が学習対象のデータに過度に依存し、学習結果がデータ分布に依存する現象を指します。過学習は、学習者が学習対象のデータに過度に依存し、学習結果がデータ分布に依存する現象を指します。過学習は、学習者が学習対象のデータに過度に依存し、学習結果がデータ分布に依存する現象を指します。過学習は、学習者が学習対象のデータに過度に依存し、学習結果がデータ分布に依存する現象を指します。過学習は、学習者が学習対象のデータに過度に依存し、学習結果がデータ分布に依存する現象を指します。過学習は、学習者が学習対象のデータに過度に依存し、学習結果がデータ分布に依存する現象を指します。過学習は、学習者が学習対象のデータに過度に依存し、学習結果がデータ",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "初めて学ぶ人に「過学習」の意味と特徴を説明してください。",
+      "raw": "{\"answer\": \"過学習とは、学習者が学習した知識や技能を、実際の問題や状況に適用する際に、本来は不要な知識や技能を誤って適用してしまう現象です。特徴として、学習者が「正しい知識」を「誤った知識」に置き換えて、結果的に問題解決に失敗する傾向があります。初めて学ぶ人に特に過学習は避けることが重要です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「overfitting」という呼び方の用語を説明してください。",
+      "raw": "{\"answer\": \"過学習（overfitting）とは、モデルが学習したデータに過度に適合し、新データに対して正確に予測できない現象を指します。過学習は欠損学習（欠損データ）や欠損学習の欠陥、欠損学習の欠陥の欠陥、欠損学習の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠陥の欠",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "「ベクトルデータベース」とは何ですか？",
+      "raw": "{\"answer\": \"ベクトルデータベースは、データがベクトル（数値列）の形式で保存・操作されるデータベースです。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "「検索拡張生成」とは何ですか？",
+      "raw": "{\"answer\": \"検索拡張生成（Search Engine Expansion）とは、検索エンジンが検索結果を特定したキーワードや文脈に基づいて、関連する検索結果を自動的に追加・生成する技術です。従来の検索では、特定のキーワードのみを検索し、結果が限定的であったため、この技術により検索結果の範囲を広げ、より多くの有用な情報を得られるようになっています。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "「FlashAttention」とは何ですか？",
+      "raw": "{\"answer\": \"FlashAttention は、大規模言語モデル（LLM）の生成プロセスにおいて、モデルの出力を高速に処理するために設計された、メモリ効率を高める技術です。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "「バッチ正規化」とは何ですか？",
+      "raw": "{\"answer\": \"バッチ正規化（Batch Normalization）は、ニューラルネットワークの出力層において、各ノードの平均値と標準偏差を計算し、その値を出力値に正規分布に従うように調整する手法です。これにより、出力層の活性化関数（Sigmoid や Tanh など）の計算負荷を軽減し、学習速度を向上させます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "「拡散モデル」とは何ですか？",
+      "raw": "{\"answer\": \"拡散モデルは、物質や粒子が空間に移動する現象を記述する数学的モデルです。このモデルでは、物質の濃度や密度が時間とともに空間の位置に散乱する様子を描くことができます。拡散現象は、熱伝導や分子運動論の基礎として広く知られています。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "「Vision Transformer」とは何ですか？",
+      "raw": "{\"answer\": \"Vision Transformer は、画像認識や自然言語処理において、特に Transformer 構造を用いた大規模なモデルの一つです。このモデルは、各画像の各ノードを独立した Transformer 構造で構成し、各ノードの出力を他のノードに伝送することで、画像の構造を学習します。また、各ノードの出力を結合して最終的な出力を生成する構造も含まれます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    }
+  ]
+}

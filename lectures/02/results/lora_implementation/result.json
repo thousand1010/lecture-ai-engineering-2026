@@ -1,0 +1,121 @@
+{
+  "config": {
+    "base_model": "Qwen/Qwen3.5-0.8B",
+    "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+    "seed": 42,
+    "num_train_epochs": 20,
+    "warmup_steps": 6,
+    "lr": 0.0002,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "max_seq_len": 512,
+    "max_new_tokens": 96,
+    "gen": {
+      "do_sample": false
+    }
+  },
+  "versions": {
+    "transformers": "5.18.0",
+    "peft": "0.21.1",
+    "trl": "1.14.2",
+    "torch": "2.14.1+cu130"
+  },
+  "task": "implementation",
+  "source": {
+    "path": "data/lora_homework/study_room.json",
+    "sha256": "98353f7a6e57b5c8314c1e071c915b2a873484b1712b1f8cacdc4b3300b63b37",
+    "note": "実装課題の題材案。すべて架空の自習室のルールであり、実在の施設の案内ではありません。"
+  },
+  "training": {
+    "seconds": 205.3,
+    "final_logged_loss": 0.01735316962003708,
+    "last_logged_step": 40,
+    "steps": 40,
+    "mean_training_loss": 0.44826995618641374
+  },
+  "method": "LoRA（量子化なし）",
+  "before": {
+    "label": "before",
+    "n": 21,
+    "format_rate": 0.3333333333333333,
+    "content_rate": 0.14285714285714285,
+    "both_rate": 0.14285714285714285,
+    "seconds": 22.1
+  },
+  "after": {
+    "label": "after",
+    "n": 21,
+    "format_rate": 1.0,
+    "content_rate": 0.9047619047619048,
+    "both_rate": 0.9047619047619048,
+    "seconds": 37.6
+  },
+  "regressed": [
+    "途中で外出して戻れますか"
+  ],
+  "knowledge": [
+    {
+      "質問": "会議室も予約できますか",
+      "根拠あり": false,
+      "学習前の分類": "needs_review",
+      "学習前の出力": "{\"answer\": \"確認が必要\", \"needs_review\": true}",
+      "学習後の分類": "needs_review",
+      "学習後の出力": "{\"answer\": \"この FAQ には記載がありません。運営に確認が必要です。\", \"needs_review\": true}"
+    },
+    {
+      "質問": "電話での予約はできますか",
+      "根拠あり": false,
+      "学習前の分類": "format_error",
+      "学習前の出力": "{\"answer\": \"確認が必要\"}",
+      "学習後の分類": "needs_review",
+      "学習後の出力": "{\"answer\": \"この FAQ には記載がありません。運営に確認が必要です。\", \"needs_review\": true}"
+    },
+    {
+      "質問": "途中で外出して戻れますか",
+      "根拠あり": false,
+      "学習前の分類": "needs_review",
+      "学習前の出力": "{\"answer\": \"確認が必要\", \"needs_review\": true}",
+      "学習後の分類": "asserted",
+      "学習後の出力": "{\"answer\": \"ふた付きの飲み物は持ち込めますが、食事はできません。\", \"needs_review\": false}"
+    },
+    {
+      "質問": "何時に開いて何時に閉まりますか",
+      "根拠あり": true,
+      "学習前の分類": "format_error",
+      "学習前の出力": "{\"answer\": \"9:00〜21:00\"}",
+      "学習後の分類": "asserted",
+      "学習後の出力": "{\"answer\": \"自習室の利用時間は毎日 9:00〜21:00 です。\", \"needs_review\": false}"
+    }
+  ],
+  "executed_training_myself": true,
+  "groups": [
+    {
+      "label": "before",
+      "group": "grounded",
+      "n": 15,
+      "format_rate": 0.26666666666666666,
+      "content_rate": 0.0
+    },
+    {
+      "label": "before",
+      "group": "ungrounded",
+      "n": 6,
+      "format_rate": 0.5,
+      "content_rate": 0.5
+    },
+    {
+      "label": "after",
+      "group": "grounded",
+      "n": 15,
+      "format_rate": 1.0,
+      "content_rate": 1.0
+    },
+    {
+      "label": "after",
+      "group": "ungrounded",
+      "n": 6,
+      "format_rate": 1.0,
+      "content_rate": 0.6666666666666666
+    }
+  ]
+}
