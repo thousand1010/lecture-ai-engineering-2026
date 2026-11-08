@@ -1,0 +1,14 @@
+[model] gemini-3.5-flash-lite
+第2回の内容から確認問題を1問出題します！
+
+**【確認問題】**
+「ランク（LoRAのr）」の意味は何でしょうか？
+
+---
+
+ぜひ考えてみてください！答えが分かったら教えてくださいね。
+
+--- trace ---
+[tool call]   make_quiz({'lecture': 2})
+[tool return] make_quiz -> {"question": "「ランク（LoRAのr）」の意味は？", "answer": "LoRAで使う低ランク行列の大きさを決めるハイパーパラメータ。大きいほど表現力が上がるが、学習するパラメータとメモリも増える。"}…
+[usage] RunUsage(cost=Decimal('0.0004468'), details={'text_prompt_tokens': 956}, input_text_tokens=956, input_tokens=956, output_tokens=64, requests=2, tool_calls=1)
