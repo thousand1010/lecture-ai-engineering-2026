@@ -1,0 +1,327 @@
+[
+  {
+    "question": "第2回の説明で、温度を上げ下げするとサンプリングされる回答の性格はどう変わりますか？",
+    "required_page_ids": [
+      "lec02-main-p012"
+    ],
+    "vector_page_ids": [
+      "lec02-main-p012",
+      "lec02-main-p018",
+      "lec02-main-p026",
+      "lec02-main-p017",
+      "lec02-main-p027"
+    ],
+    "graph_page_ids": [
+      "lec02-main-p012",
+      "lec02-main-p018",
+      "lec02-main-p026",
+      "lec02-main-p011",
+      "lec02-main-p013",
+      "lec02-main-p017",
+      "lec02-main-p019",
+      "lec02-main-p025",
+      "lec02-main-p027",
+      "lec02-main-p010"
+    ],
+    "route": "vector"
+  },
+  {
+    "question": "第1回のRAGの例で、資料を検索できるように準備する工程を順番に教えてください。",
+    "required_page_ids": [
+      "lec01-main-p049"
+    ],
+    "vector_page_ids": [
+      "lec01-main-p049",
+      "lec01-main-p019",
+      "lec02-main-p013",
+      "lec02-main-p050",
+      "lec02-main-p047"
+    ],
+    "graph_page_ids": [
+      "lec01-main-p049",
+      "lec01-main-p019",
+      "lec02-main-p013",
+      "lec01-main-p048",
+      "lec01-main-p050",
+      "lec01-main-p018",
+      "lec01-main-p020",
+      "lec02-main-p012",
+      "lec02-main-p014",
+      "lec01-main-p047"
+    ],
+    "route": "vector"
+  },
+  {
+    "question": "第3回で紹介した構造化出力は、モデルにどのような形式で出力させる方法ですか？",
+    "required_page_ids": [
+      "lec03-main-p034"
+    ],
+    "vector_page_ids": [
+      "lec03-main-p034",
+      "lec03-main-p062",
+      "lec03-main-p033",
+      "lec03-main-p035",
+      "lec03-main-p036"
+    ],
+    "graph_page_ids": [
+      "lec03-main-p034",
+      "lec03-main-p062",
+      "lec03-main-p033",
+      "lec03-main-p035",
+      "lec03-main-p061",
+      "lec03-main-p063",
+      "lec03-main-p032",
+      "lec03-main-p036",
+      "lec03-main-p060",
+      "lec03-main-p064"
+    ],
+    "route": "vector"
+  },
+  {
+    "question": "講義の質問に答えるシステムで、データパイプラインとは何ですか？ その前に『この式の意味は？』のような問いについて何を確かめ、どう補えばよいですか？",
+    "required_page_ids": [
+      "lec01-main-p044",
+      "lec01-main-p045"
+    ],
+    "vector_page_ids": [
+      "lec01-main-p044",
+      "lec02-main-p054",
+      "lec01-main-p036",
+      "lec01-main-p039",
+      "lec02-main-p019"
+    ],
+    "graph_page_ids": [
+      "lec01-main-p044",
+      "lec02-main-p054",
+      "lec01-main-p036",
+      "lec01-main-p043",
+      "lec01-main-p045",
+      "lec02-main-p053",
+      "lec02-main-p055",
+      "lec01-main-p035",
+      "lec01-main-p037",
+      "lec01-main-p042"
+    ],
+    "route": "graph"
+  },
+  {
+    "question": "第2回の次トークン生成で、入力文はどのような形にしてモデルに渡し、選んだトークンはそのあとどこに加えますか？ 温度を下げると何が変わりますか？",
+    "required_page_ids": [
+      "lec02-main-p009",
+      "lec02-main-p010",
+      "lec02-main-p012"
+    ],
+    "vector_page_ids": [
+      "lec02-main-p012",
+      "lec02-main-p009",
+      "lec02-main-p018",
+      "lec02-main-p010",
+      "lec02-main-p008"
+    ],
+    "graph_page_ids": [
+      "lec02-main-p012",
+      "lec02-main-p009",
+      "lec02-main-p018",
+      "lec02-main-p011",
+      "lec02-main-p013",
+      "lec02-main-p008",
+      "lec02-main-p010",
+      "lec02-main-p017",
+      "lec02-main-p019",
+      "lec02-main-p014"
+    ],
+    "route": "vector"
+  },
+  {
+    "question": "第2回のモデル選びで、APIと手元での実行はデータの扱いがどう違い、公開のランキングで用途に合うか判断しにくい理由と、単価が下がると利用量も下がるとは限らない理由を教えてください。",
+    "required_page_ids": [
+      "lec02-main-p038",
+      "lec02-main-p039",
+      "lec02-main-p040"
+    ],
+    "vector_page_ids": [
+      "lec02-main-p069",
+      "lec02-main-p038",
+      "lec02-main-p044",
+      "lec02-main-p049",
+      "lec02-main-p040"
+    ],
+    "graph_page_ids": [
+      "lec02-main-p069",
+      "lec02-main-p038",
+      "lec02-main-p044",
+      "lec02-main-p068",
+      "lec02-main-p070",
+      "lec02-main-p037",
+      "lec02-main-p039",
+      "lec02-main-p043",
+      "lec02-main-p045",
+      "lec02-main-p067"
+    ],
+    "route": null
+  },
+  {
+    "question": "第3回のツール呼び出しで、20分かかるテストと、互いに結果を待たない複数の読み取りは、それぞれどう実行しますか？ 親が大量のログを読まないためには、何を使えますか？",
+    "required_page_ids": [
+      "lec03-main-p029",
+      "lec03-main-p030",
+      "lec03-main-p031"
+    ],
+    "vector_page_ids": [
+      "lec03-main-p029",
+      "lec03-main-p030",
+      "lec03-main-p031",
+      "lec03-main-p022",
+      "lec03-main-p063"
+    ],
+    "graph_page_ids": [
+      "lec03-main-p029",
+      "lec03-main-p030",
+      "lec03-main-p031",
+      "lec03-main-p028",
+      "lec03-main-p032",
+      "lec03-main-p027",
+      "lec03-main-p033",
+      "lec01-main-p067",
+      "lec01-main-p070",
+      "lec01-main-p071"
+    ],
+    "route": "vector"
+  },
+  {
+    "question": "エージェントを止める上限は誰が数え、完了の判定は誰がしますか？ ツールが途中で失敗してやり直すとき、講義では何を確かめるべきだと説明しますか？",
+    "required_page_ids": [
+      "lec03-main-p043",
+      "lec03-main-p044",
+      "lec03-main-p045"
+    ],
+    "vector_page_ids": [
+      "lec03-main-p045",
+      "lec03-main-p043",
+      "lec03-main-p044",
+      "lec03-main-p048",
+      "lec03-main-p046"
+    ],
+    "graph_page_ids": [
+      "lec03-main-p045",
+      "lec03-main-p043",
+      "lec03-main-p044",
+      "lec03-main-p046",
+      "lec03-main-p042",
+      "lec03-main-p047",
+      "lec03-main-p041",
+      "lec03-main-p004",
+      "lec03-main-p010",
+      "lec03-main-p012"
+    ],
+    "route": "vector"
+  },
+  {
+    "question": "第2回で紹介したChronosは、時系列データを何に変換して学習し、予測のときにどう元に戻しますか？",
+    "required_page_ids": [
+      "lec02-main-p037"
+    ],
+    "vector_page_ids": [
+      "lec02-main-p037",
+      "lec02-main-p066",
+      "lec02-main-p032",
+      "lec02-main-p036",
+      "lec02-main-p011"
+    ],
+    "graph_page_ids": [
+      "lec02-main-p037",
+      "lec02-main-p066",
+      "lec02-main-p032",
+      "lec02-main-p036",
+      "lec02-main-p038",
+      "lec02-main-p065",
+      "lec02-main-p067",
+      "lec02-main-p031",
+      "lec02-main-p033",
+      "lec02-main-p035"
+    ],
+    "route": "vector"
+  },
+  {
+    "question": "AIコーディングの試験結果を評価する際、平均正答率だけでは足りない理由と、応答が遅いと分かったとき改善サイクルのどこを見直すべきかを、第1回の質問対応の例で説明してください。",
+    "required_page_ids": [
+      "lec01-main-p041",
+      "lec01-main-p052"
+    ],
+    "vector_page_ids": [
+      "lec01-main-p035",
+      "lec01-main-p027",
+      "lec01-main-p041",
+      "lec01-main-p052",
+      "lec01-main-p053"
+    ],
+    "graph_page_ids": [
+      "lec01-main-p035",
+      "lec01-main-p027",
+      "lec01-main-p041",
+      "lec01-main-p034",
+      "lec01-main-p036",
+      "lec01-main-p026",
+      "lec01-main-p028",
+      "lec01-main-p040",
+      "lec01-main-p042",
+      "lec01-main-p033"
+    ],
+    "route": "vector"
+  },
+  {
+    "question": "第3回の説明では、構造化出力でコンテキストに指定しておくものと、制約付きデコーディングでトークンが選ばれる仕組みはどう違いますか？ 判断モデルで結果が返るまでの計算の仕方も教えてください。",
+    "required_page_ids": [
+      "lec03-main-p034",
+      "lec03-main-p035",
+      "lec03-main-p036"
+    ],
+    "vector_page_ids": [
+      "lec03-main-p036",
+      "lec03-main-p035",
+      "lec02-main-p009",
+      "lec02-main-p010",
+      "lec02-main-p008"
+    ],
+    "graph_page_ids": [
+      "lec03-main-p036",
+      "lec03-main-p035",
+      "lec02-main-p009",
+      "lec03-main-p037",
+      "lec03-main-p034",
+      "lec02-main-p008",
+      "lec02-main-p010",
+      "lec03-main-p038",
+      "lec03-main-p033",
+      "lec02-main-p007"
+    ],
+    "route": "graph"
+  },
+  {
+    "question": "講義資料の検索の仕組みを入れて質問に答えるシステムを作る場合のベースラインはどう置きますか？ また、デプロイした後、想定外の使われ方を見つけたら何を見直しますか？",
+    "required_page_ids": [
+      "lec01-main-p050",
+      "lec01-main-p052"
+    ],
+    "vector_page_ids": [
+      "lec02-main-p019",
+      "lec02-main-p050",
+      "lec02-main-p055",
+      "lec02-main-p053",
+      "lec02-main-p018"
+    ],
+    "graph_page_ids": [
+      "lec02-main-p019",
+      "lec02-main-p050",
+      "lec02-main-p055",
+      "lec02-main-p018",
+      "lec02-main-p020",
+      "lec02-main-p049",
+      "lec02-main-p051",
+      "lec02-main-p054",
+      "lec02-main-p056",
+      "lec02-main-p017"
+    ],
+    "route": null
+  }
+]

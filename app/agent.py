@@ -5,6 +5,7 @@
     uv run python -m app.agent --trace "LoRAとQLoRAの違いは？"   # ツール呼び出しを表示
     uv run python -m app.agent --graph --trace "LoRAとQLoRAの違いは？"  # 検索からグラフをたどって回答
     uv run python -m app.agent --tree --trace "LoRAとQLoRAの違いは？"  # 目次をたどって回答
+    uv run python -m app.agent --auto --trace "LoRAとQLoRAの違いは？"  # 学習したルーターで取得方式を選ぶ
     uv run python -m app.agent --full-context --trace "LoRAとQLoRAの違いは？"  # 全資料を一度に渡す
     uv run python -m app.agent --mcp --trace "LoRAとは？"        # 第5回: ツールを MCP サーバーから受け取る
     uv run python -m app.agent --mcp --list-tools               # 第5回: モデルに見えるツール一覧（APIキー不要）
@@ -33,6 +34,7 @@ from pydantic_ai.providers.google import GoogleProvider
 from app import tools
 from app.retrieval import run_full_context
 from app.config import MODEL, api_error_message, get_api_key
+from app.router import load_router
 
 INSTRUCTIONS = """\
 あなたはAIエンジニアリング講座（AIE2026）の学習支援エージェントです。
@@ -181,15 +183,28 @@ def main() -> None:
     modes.add_argument("--mcp", action="store_true", help="第5回: ツールを MCP サーバー（app/mcp_servers.json）から受け取る")
     modes.add_argument("--graph", action="store_true", help="検索結果からグラフをたどり、候補ページを読んで答える")
     modes.add_argument("--tree", action="store_true", help="目次をたどり、必要なページを読んで答える")
+    modes.add_argument("--auto", action="store_true", help="学習したルーターでベクトル検索かGraphを選ぶ")
     modes.add_argument("--full-context", action="store_true", help="検索せず、lectures.jsonの全資料を一度に渡す")
     parser.add_argument("--list-tools", action="store_true", help="モデルに見えるツール一覧を表示して終了する（APIキー不要）")
     args = parser.parse_args()
+
+    route = None
+    routing_seconds = 0.0
+    if args.auto:
+        if not args.question or not args.question.strip():
+            parser.error("--auto には質問を指定してください")
+        route_started = perf_counter()
+        try:
+            route = load_router().predict(args.question)
+        except (OSError, ValueError) as error:
+            parser.exit(1, f"ルーターの学習に失敗しました: {error}\n")
+        routing_seconds = perf_counter() - route_started
 
     target = build_mcp_agent() if args.mcp else agent
     mode = nullcontext()
     if args.tree:
         mode = target.override(instructions=TREE_INSTRUCTIONS, tools=[tools.browse_tree])
-    elif args.graph:
+    elif args.graph or route == "graph":
         mode = target.override(instructions=GRAPH_INSTRUCTIONS, tools=[tools.search_graph])
     with mode:
         if args.list_tools:
@@ -203,6 +218,8 @@ def main() -> None:
             parser.error("質問を指定してください")
 
         print(f"[model] {MODEL}")
+        if args.trace and route is not None:
+            print(f"[route] {route}")
         if args.mcp:
             print("[tools] MCP サーバー（app/mcp_servers.json）")
 
@@ -218,7 +235,7 @@ def main() -> None:
         except ModelHTTPError as e:
             print(api_error_message(e.status_code, str(e.body)[:200]))
             raise SystemExit(1)
-        elapsed_seconds = perf_counter() - started
+        elapsed_seconds = perf_counter() - started + routing_seconds
         print(result.output)
         if args.trace:
             print_trace(result, elapsed_seconds)
